@@ -37,6 +37,7 @@
 | [19-lasrecomp-android-lessons.md](19-lasrecomp-android-lessons.md) | LASRecomp Android 的分层、构建和性能经验提炼 |
 | [20-target-architecture.md](20-target-architecture.md) | 未来可复用静态重编译平台的目标架构 |
 | [21-contract-reconstruction-research.md](21-contract-reconstruction-research.md) | 图形契约重建、oracle、等价类和后续研究课题 |
+| [22-game-selection-and-maturity.md](22-game-selection-and-maturity.md) | 游戏选型、能力覆盖和架构成熟度阶梯 |
 | [symptom-index.tsv](symptom-index.tsv) | 机器可读的症状→证据→章节索引 |
 
 ## 证据等级
