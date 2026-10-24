@@ -20,12 +20,12 @@ cascade:
 
 手册按“先建立模型，再验证契约，最后扩展架构”的顺序组织。
 
-- [核心原则](/docs/handbook/00-principles/)
-- [工作流](/docs/handbook/01-workflow/)
-- [Runtime 契约](/docs/handbook/02-runtime-contracts/)
-- [图形契约](/docs/handbook/03-graphics-contracts/)
-- [未来目标架构](/docs/handbook/20-target-architecture/)
-- [契约重建研究](/docs/handbook/21-contract-reconstruction-research/)
-- [游戏选型与成熟度](/docs/handbook/22-game-selection-and-maturity/)
-- [对游戏开发的价值](/docs/handbook/23-value-to-game-development/)
+- [核心原则](/docs/handbook/principles/)
+- [工作流](/docs/handbook/workflow/)
+- [Runtime 契约](/docs/handbook/runtime-contracts/)
+- [图形契约](/docs/handbook/graphics-contracts/)
+- [未来目标架构](/docs/handbook/target-architecture/)
+- [契约重建研究](/docs/handbook/contract-reconstruction-research/)
+- [游戏选型与成熟度](/docs/handbook/game-selection-and-maturity/)
+- [对游戏开发的价值](/docs/handbook/value-to-game-development/)
 {.cards}
