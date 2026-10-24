@@ -1,0 +1,37 @@
+sections: [hero, cards, cta]
+
+hero:
+  align: center
+  eyebrow: 工程实践手册
+  title_lines:
+    - words: [{ text: 让静态重编译， }]
+    - words: [{ text: 可复用、可验证。 }]
+  lead: 从游戏特化 profile、Horizon runtime 到 NVN 图形契约，沉淀跨平台原生移植的长期方法。
+  actions:
+    - { label: 阅读手册, url: docs/, icon: fa-solid fa-book, style: primary }
+    - { label: 查看目标架构, url: docs/handbook/20-target-architecture/, icon: fa-solid fa-layer-group, style: ghost }
+
+cards:
+  eyebrow: 从契约开始
+  title: 把一次性经验变成公共能力
+  columns: 3
+  items:
+    - title: 核心手册
+      desc: 学习静态重编译、runtime 和图形契约的共同模型。
+      icon: fa-solid fa-book-open
+      url: docs/
+    - title: 目标架构
+      desc: 了解编译器、runtime、图形前端、平台层和游戏 profile 的分工。
+      icon: fa-solid fa-layer-group
+      url: docs/handbook/20-target-architecture/
+    - title: 诊断与研究
+      desc: 用证据、oracle、差分 trace 和成熟度阶梯减少猜测。
+      icon: fa-solid fa-magnifying-glass-chart
+      url: docs/handbook/21-contract-reconstruction-research/
+
+cta:
+  title: 从下一款游戏开始复用。
+  text: 先建立 profile 和契约报告，再把验证过的能力沉淀回公共 runtime。
+  label: 查看游戏选型
+  url: docs/handbook/22-game-selection-and-maturity/
+  style: primary
