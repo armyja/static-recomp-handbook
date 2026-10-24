@@ -15,3 +15,5 @@ first launch differs from later launch	存档;file system;cached state	clean sav
 FPS low after scene load	pipeline compile;translation;upload;GPU	CPU replay, pipeline compile, upload, GPU frame-time split	upgrade Vulkan blindly	01-workflow.md
 memory grows every frame	object retirement;image reuse;upload ring	object/incarnation counts and completed fence	guest leak without host ledger	03-graphics-contracts.md
 new game cannot start	profile;build ID;module/layout;services	profile diff, patch bytes, module imports and first missing service	copy another game's constants	08-portability-profile.md
+public APK starts but cannot build game	package;extractor;generator;compiler;storage	build manifest, tool versions, free space, failed unit and resume state	blame Vulkan before game library exists	19-lasrecomp-android-lessons.md
+Chinese text missing only on Android	font source;language code;font format;platform paths	resolved font path, glyph coverage, parser result and device OS	assume the upstream language-code fix covers Android fonts	04-platform-differences.md

@@ -20,6 +20,10 @@ NVN 命令和 shader 被记录、翻译、重放
 因此性能上限很高：游戏代码不经过 CPU 指令解释；但兼容性责任也更集中。模拟器可以用统一的虚拟硬件
 把差异藏起来，静态重编译必须逐项重建游戏已经依赖的语义。
 
+工程上还要把系统拆成四层：游戏特化 profile/生成器、通用 runtime、图形后端、平台外壳。用户提供的游戏资料经过
+版本校验后生成独立 game library；APK 或桌面程序本身只负责加载 runtime、资源和工具。这个边界让地址表、shader
+事实和游戏 patch 不会污染下一款游戏，也让 Android 的解包、SAF、后台构建与 Mac 的窗口生命周期各自可测试。
+
 ## 三个必须分开的契约
 
 ### 游戏契约
@@ -45,6 +49,8 @@ render target、同步和 present。画面“能出一帧”只证明最小链�
 4. **游戏特例必须有来源。** 每个固定地址、容量、shader hash 或 patch 都要记录 build ID 和反汇编依据。
 5. **实验需要可回滚。** 临时开关、设备文件和 trace 结束后清理；失败实验也要归档。
 6. **性能优化晚于正确性。** 先获得正确画面和稳定状态，再测帧时间、GPU 利用率、内存带宽和 pipeline miss。
+7. **构建产物必须可追溯。** game library 的 build ID、generator/compiler 版本、flags、patch hash 和 profile hash
+   必须能从日志或 manifest 还原；可恢复构建优先于“重新跑一遍”。
 
 ## 什么算真正突破
 

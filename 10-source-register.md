@@ -18,6 +18,7 @@
 | [Strato](https://github.com/strato-emu/strato) | GPL-3.0 | README；HEAD `ae1566a48285f`（2026-10-24） | Android emulator 的架构线索；禁止未经审核直接复制 |
 | [Atmosphère/libmesosphere](https://github.com/Atmosphere-NX/Atmosphere/tree/master/libraries/libmesosphere) | GPLv2，含特定例外 | README/许可证说明；HEAD `6b0c077b4c60f`（2026-10-24） | Horizon kernel 语义和测试向量；默认只作参考 |
 | [LASRecomp](https://github.com/peiikai/LASRecomp) | 需按仓库 LICENSE | README/Linux 文档；HEAD `59b61fd3c65d`（2026-10-24） | 跨平台矩阵、Vulkan/Linux ARM64 验收、启动时准备资源 |
+| [LASRecomp-Android-Plus](https://github.com/Nycolazs/LASRecomp-Android-Plus) | 需按仓库 LICENSE | README、`docs/android-ondevice-build.md`、Android 源码结构；HEAD `cca791a3e721`（2026-10-24） | Android shell、SAF/解包、手机端生成/编译、可恢复构建、触控和移动 Vulkan；不复制游戏 profile |
 | Ryujinx / yuzu | 需逐仓库/文件确认 | 本地已有 vendored/reference 线索 | shader translation、Horizon service 和内存语义交叉验证 |
 | Skyline | 需确认原仓库状态和许可证 | 仅由 Strato README 间接定位 | NCE、Android memory/TLS/异常边界的研究入口 |
 

@@ -34,6 +34,7 @@
 | [16-provenance.md](16-provenance.md) | 本项目经验、外部引用和公开范围说明 |
 | [17-audit-report.md](17-audit-report.md) | 当前工作树的发布前审计记录 |
 | [18-android-candidate-validation.md](18-android-candidate-validation.md) | 真实 Android 设备上的公开静态重编译候选验证 |
+| [19-lasrecomp-android-lessons.md](19-lasrecomp-android-lessons.md) | LASRecomp Android 的分层、构建和性能经验提炼 |
 | [symptom-index.tsv](symptom-index.tsv) | 机器可读的症状→证据→章节索引 |
 
 ## 证据等级

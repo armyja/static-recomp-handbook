@@ -41,6 +41,27 @@ Eden/Yuzu 代码许可证和依赖必须逐文件核对；GPL 代码不能直接
 可借鉴：平台能力矩阵、启动时准备本地游戏文件、Vulkan 性能回归、`make smoketest` 一类验收门槛。不能把
 “Linux ARM64 可编译”误写成“Android 已支持”。
 
+Android fork：[Nycolazs/LASRecomp-Android-Plus](https://github.com/Nycolazs/LASRecomp-Android-Plus)
+
+这是本手册目前最适合研究“如何把静态重编译交付到 Android”的公开案例。它的公开 README 和
+[on-device build 文档](https://github.com/Nycolazs/LASRecomp-Android-Plus/blob/main/docs/android-ondevice-build.md)
+显示了完整链路：用户提供游戏文件和 keys，应用解包并校验版本，手机运行生成器和 AArch64 编译器，最后加载单独的
+game library。它还把 Android 前端、触控、GPU 驱动选择、Vulkan 性能、shader/pipeline cache 和后台构建拆成不同
+边界。
+
+可借鉴：
+
+- 公共 APK 检查，保证不含游戏代码和游戏资料；
+- `game build id + generator/compiler + flags` 组成可失效的构建缓存 key；
+- 中断构建可恢复，构建产物原子发布；
+- Android 地址偏移由生成器、patch 和 runtime 共同管理；
+- 移动 GPU 优化以固定场景和温度/帧时间测量为准；
+- 触摸、解包、字体、渲染和输入日志有各自的诊断范围。
+
+不可直接搬用：Link's Awakening 的地址表、shader/资源事实、游戏 patch、存档结构以及它的 Android 专属假设。该
+fork 的代码可以作为公开实现研究，但每个文件仍需按其许可证和依赖逐项核对。更完整的分层和工作量拆解见
+[19-lasrecomp-android-lessons.md](19-lasrecomp-android-lessons.md)。
+
 ## SuperMarioWonderRecomp
 
 仓库：[BelmanteGu/SuperMarioWonderRecomp](https://github.com/belmanteGu/SuperMarioWonderRecomp)
