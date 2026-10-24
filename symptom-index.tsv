@@ -1,0 +1,17 @@
+# symptom<TAB>priority layers<TAB>first evidence<TAB>common false lead<TAB>chapter
+process exits 139 before first present	loader/ABI;HLE;guest memory	fault address + caller disassembly + QueryMemory region	regenerate patch immediately	02-runtime-contracts.md
+process exits 139 after first presents	guest allocator;VAMM;object lifetime	guest allocation request + heap/alias ledger + last object snapshot	present deadlock or simply enlarge heap	02-runtime-contracts.md
+process stays alive but whole frame black	draw target;VS;composite;present	read back guest target and present source separately	window/swapchain alone is wrong	03-graphics-contracts.md
+forced solid red is visible	Vulkan output chain;original shader inputs	compare original draw versus forced shader	red output is the final fix	03-graphics-contracts.md
+only some text is missing	shader cache;descriptor;texture view;offscreen target	fragment hash + atlas/view + c3/c1 + target identity	font asset is absent	03-graphics-contracts.md
+white bars where unselected text belongs	shader output;offscreen composition;present freshness	Mac/Android same draw and target snapshot	R8 alpha or BC decode globally	06-case-studies.md
+UI frame visible but glyphs absent	R8/swizzle;discard;dynamic uniforms	UV, atlas bytes, sampled view, discard input, final color	all font uploads are broken	03-graphics-contracts.md
+black/bright frame alternation	present image lifecycle;replay timing	per-image acquire/submit/present and last-written image	GPU performance or random texture corruption	04-platform-differences.md
+dialog freezes but frames continue	file/save/state machine;input	filesystem errno, save files, guest state and input receipt	Vulkan or shader stall	02-runtime-contracts.md
+button input has no effect	HID;focus;receipt/latch;thread consumer	input event timeline and number of consumers	wrong screen coordinates only	05-ai-diagnostic-runbook.md
+movie/audio continues but video is black	movie service;CPU decode;texture writeback	service calls, frame texture bytes, WriteTexels/flush timeline	missing Decoder protocol without evidence	06-case-studies.md
+new scene has no program	shader extraction/cache;program binding	shader miss count, stage hashes, guest BindProgram value	all no-program entries are host loss	07-external-projects.md
+first launch differs from later launch	存档;file system;cached state	clean save dir, exact input route, file opens and errno	graphics race	02-runtime-contracts.md
+FPS low after scene load	pipeline compile;translation;upload;GPU	CPU replay, pipeline compile, upload, GPU frame-time split	upgrade Vulkan blindly	01-workflow.md
+memory grows every frame	object retirement;image reuse;upload ring	object/incarnation counts and completed fence	guest leak without host ledger	03-graphics-contracts.md
+new game cannot start	profile;build ID;module/layout;services	profile diff, patch bytes, module imports and first missing service	copy another game's constants	08-portability-profile.md
