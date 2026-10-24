@@ -19,6 +19,7 @@
 | 可长期维护 | [11-experiment-templates.md](11-experiment-templates.md)、[12-reusable-tools.md](12-reusable-tools.md) | 实验模板、工具目录、证据产物和回归表 | 已覆盖 |
 | 静态重编译分层与构建产物 | [00-principles.md](00-principles.md)、[19-lasrecomp-android-lessons.md](19-lasrecomp-android-lessons.md) | profile/生成器、game library、runtime、平台层和可恢复构建边界 | 已覆盖 |
 | Android 产品化经验 | [04-platform-differences.md](04-platform-differences.md)、[19-lasrecomp-android-lessons.md](19-lasrecomp-android-lessons.md) | 解包、版本校验、on-device build、缓存、触控、驱动与移动 GPU 测量 | 已覆盖 |
+| 未来目标架构 | [20-target-architecture.md](20-target-architecture.md) | 通用编译器、runtime、图形前端、平台层和游戏 profile 的目标分层与迁移阶段 | 已记录；未宣称实现 |
 | GitHub 发布准备 | [14-publishing-checklist.md](14-publishing-checklist.md) | 敏感扫描、链接检查、提交/推送顺序和候选仓库名 | 已覆盖；待远端确认 |
 
 ## 尚未宣称完成的事项
