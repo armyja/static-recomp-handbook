@@ -1,5 +1,9 @@
 # 05 — AI 诊断手册
 
+AI 的首要任务是缩小契约候选空间和组织证据，不是凭截图自由生成图形代码。优先使用结构、数值和时序 oracle；视觉
+模型只作为低成本筛查器。契约分类、等价类和验证层次见
+[21-contract-reconstruction-research.md](21-contract-reconstruction-research.md)。
+
 ## 接到一个新症状时
 
 ### 1. 先分类，不猜修复

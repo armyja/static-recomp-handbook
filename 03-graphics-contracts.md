@@ -1,5 +1,9 @@
 # 03 — Graphics 契约：NVN 到 Metal/Vulkan
 
+图形移植不只是 API 逐条翻译，而是把 CPU 命令流、shader stage IO、资源元数据、管线状态、同步和宿主能力共同
+组成的隐含契约显式化。完整的契约重建研究和未来工具方向见
+[21-contract-reconstruction-research.md](21-contract-reconstruction-research.md)。
+
 ## 图形链路分层
 
 ```text
