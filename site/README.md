@@ -20,12 +20,18 @@ make serve
 make build
 ```
 
-## Cloudflare Pages
+## Cloudflare deployment
 
-The repository-level workflow at `.github/workflows/cloudflare-pages.yaml` builds
-this directory and deploys `site/public` with Wrangler. Configure the Cloudflare
-account and API token secrets, then set `CLOUDFLARE_PAGES_ENABLED=true` for
-automatic deployment on pushes to `main`.
+The current Cloudflare dashboard may present this as a Worker with Static Assets
+rather than a separate Pages project. Keep the deploy command as:
+
+```text
+npx wrangler deploy
+```
+
+`wrangler.jsonc` maps the generated `public/` directory to the Worker assets.
+The repository-level workflow at `.github/workflows/cloudflare-pages.yaml` is an
+alternative Pages API path for accounts that still expose Pages projects.
 
 Cloudflare's standard Hugo binary does not include the Extended SCSS compiler.
 The Pages build command therefore downloads the pinned Extended binary through
