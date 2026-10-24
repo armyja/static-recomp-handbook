@@ -65,7 +65,7 @@ jobs:
         env:
           SITE_URL: ${{ vars.CLOUDFLARE_SITE_URL || format('https://{0}.pages.dev/', github.event.repository.name) }}
         run: |
-          hugo --cleanDestinationDir --gc --minify --environment production \
+            ./scripts/hugo-extended.sh --cleanDestinationDir --gc --minify --environment production \
             --printPathWarnings \
             --baseURL "${SITE_URL}"
 

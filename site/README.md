@@ -26,3 +26,7 @@ The repository-level workflow at `.github/workflows/cloudflare-pages.yaml` build
 this directory and deploys `site/public` with Wrangler. Configure the Cloudflare
 account and API token secrets, then set `CLOUDFLARE_PAGES_ENABLED=true` for
 automatic deployment on pushes to `main`.
+
+Cloudflare's standard Hugo binary does not include the Extended SCSS compiler.
+The Pages build command therefore downloads the pinned Extended binary through
+`scripts/hugo-extended.sh` before rendering the site.
