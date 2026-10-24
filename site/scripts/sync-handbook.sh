@@ -15,7 +15,7 @@ for source in "$source_dir"/[0-9][0-9]-*.md; do
   title=$(sed -n 's/^# //p' "$source" | head -n 1)
   # Keep numeric prefixes in filenames and source Markdown for stable ordering,
   # but hide them from the public website's page titles and navigation labels.
-  title=$(printf '%s' "$title" | sed -E 's/^[0-9]{2}[[:space:]]*[—-][[:space:]]*//')
+  title=$(printf '%s' "$title" | perl -CS -pe 's/^\d{2}\s*[\x{2014}\x{2013}-]\s*//')
   target="$content_dir/$name"
 
   {
