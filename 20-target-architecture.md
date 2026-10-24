@@ -214,3 +214,6 @@ NVN 对象、资源生命周期、shader reflection、upload 和 render-pass 语
 
 本章描述的是未来目标，不代表当前 nxnative 已经完成这些分层。当前实现和实验状态仍以各游戏 worktree、
 `06-case-studies.md`、`13-milestone-map.md` 和对应 profile 为准。
+
+如果未来希望服务原生游戏开发和跨平台 QA，还应结合 [23-value-to-game-development.md](23-value-to-game-development.md)，
+把 Contract IR、resource ledger、shader build graph 和 deterministic replay 做成独立于静态重编译器的公共工具。

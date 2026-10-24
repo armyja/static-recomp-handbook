@@ -22,6 +22,7 @@
 | 未来目标架构 | [20-target-architecture.md](20-target-architecture.md) | 通用编译器、runtime、图形前端、平台层和游戏 profile 的目标分层与迁移阶段 | 已记录；未宣称实现 |
 | 图形契约研究方向 | [03-graphics-contracts.md](03-graphics-contracts.md)、[21-contract-reconstruction-research.md](21-contract-reconstruction-research.md) | Contract IR、事实 ledger、oracle 分层、等价类、检查点重放和 L0–L5 成熟度 | 已记录；工具尚待实现 |
 | 游戏选型与成熟度 | [22-game-selection-and-maturity.md](22-game-selection-and-maturity.md) | 按契约能力选择样本，定义从合成测试到 XC3 压力测试的阶梯 | 已记录；样本验证持续进行 |
+| 对游戏开发的长期价值 | [23-value-to-game-development.md](23-value-to-game-development.md) | Contract IR、资源账本、shader 构建图、GPU trace、确定性回放和跨平台性能 QA | 已记录；未来扩展方向 |
 | GitHub 发布准备 | [14-publishing-checklist.md](14-publishing-checklist.md) | 敏感扫描、链接检查、提交/推送顺序和候选仓库名 | 已覆盖；待远端确认 |
 
 ## 尚未宣称完成的事项
